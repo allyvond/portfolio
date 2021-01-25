@@ -1,0 +1,142 @@
+/*Mobile and Global*/
+
+#top {
+`   width: 100%;
+    margin-top: 20%;
+}
+
+#hello {
+    margin: 0 0.5rem;
+    margin-left: 10%;
+}
+
+#hello.welcome:hover, #hello.name:hover, #hello.about2:hover, #hello.enjoy:hover  {
+    animation: headShake;
+    animation-duration: 3s;
+}
+
+#hello.welcome {
+    font-size: 6em;
+    font-weight: 800;
+    color: mediumpurple;
+}
+
+#hello.name {
+    font-size: 2.3em;
+    font-weight: 600;
+}
+  
+#hello.about2 {
+    font-size: 1.4em;
+    line-height: 1.7em;
+    color: gray;
+    font-weight: 300;
+    width: 70%;
+    padding-top: 0.5%;
+}
+
+#hello.enjoy {
+    font-size: 2.5em;
+    color: lightpink;
+    font-weight: 800;
+}
+
+#line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 1%;
+    border-bottom: 6px dashed red; 
+}
+
+#line:hover {
+    animation: flash;
+    animation-duration: 1s;
+}
+
+
+/*parent container*/
+div.grid {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+
+/*container*/
+#square {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    min-height: 100px;
+    text-align: center;
+}
+
+#square a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: mediumpurple;
+}
+
+#square a:hover {
+    text-decoration: line-through;
+    color: red;
+}
+
+#square img{
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+
+/*Destop Style*/
+
+@media only screen and (min-width: 900px)
+{
+    
+#top {
+    margin-top: 7%;
+}
+
+#hello.welcome {
+    font-size: 8em;
+}
+
+#hello.name {
+    font-size: 3.5em;
+}
+  
+#hello.about2 {
+    font-size: 2em;
+    line-height: 1.8em;
+}
+
+#hello.enjoy {
+    font-size: 4em;
+}
+    
+/*parent container*/
+div.grid {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#square a{
+    font-size: 1.3em;
+}
+
+#square img{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+    
+}

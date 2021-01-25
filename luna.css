@@ -1,0 +1,149 @@
+header {
+    height: 70vh;
+    background-image:url(cafe-luna/sign.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    list-style: none;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+}
+
+nav li {
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 600; 
+}
+
+nav li a{
+    color: mediumpurple;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: yellow;
+}
+
+nav li a:hover {
+    color: red;
+    text-decoration: line-through;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    text-shadow: 2px 2px white;
+}
+
+h2 {
+    margin-top: 2%;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    padding: 30px;
+}
+
+#line {
+    margin: 0 0.5rem;
+    border-bottom: 6px dashed red;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 60%;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+img.sketches, img.logo1, img.logo2 {
+    width: 40%;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+/*parent container*/
+div.grid {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*container*/
+#square {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+    min-height: 100px;
+}
+
+#square img{
+    width: 100%;
+}
+
+
+/*Destop Style*/
+
+@media only screen and (min-width: 900px)
+{
+    
+h1 {
+    font-size: 5em;
+}
+    
+h2 {
+    font-size: 2em;
+}
+    
+img.sketches, img.logo1, img.logo2 {
+    width: 30%;
+}
+    
+#about2 {
+    font-size: 1em;
+    line-height: 1.4em;    
+}
+    
+/*parent container*/
+div.grid {
+    grid-template-columns: 1fr 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+    
+}

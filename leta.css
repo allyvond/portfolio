@@ -1,0 +1,84 @@
+header {
+    height: 70vh;
+    background-image:url(leta/leta1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    text-shadow: 2px 2px white;
+}
+
+#line {
+    border-bottom: 6px dashed red;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    padding: 10px;
+    width: 60%;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+/*parent container*/
+div.grid {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    background-color: lightgray;
+}
+
+/*container*/
+#square {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    min-height: 100px;
+}
+
+#square img{
+    width: 100%;
+}
+
+/*Destop Style*/
+
+@media only screen and (min-width: 900px)
+{
+    
+h1 {
+    font-size: 5em;
+}
+    
+#about2 {
+    font-size: 1em;
+    line-height: 1.4em;    
+}
+    
+}

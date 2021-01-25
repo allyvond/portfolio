@@ -1,0 +1,12 @@
+.mySlides {
+    display: none;
+    padding: 20%;
+}
+
+button.left {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  display: inline-block;
+}

@@ -1,0 +1,106 @@
+header {
+    height: 70vh;
+    background-image:url(makeup/seqmock5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    text-shadow: 2px 2px black;
+}
+
+#line {
+    margin: 0 0.5rem;
+    border-bottom: 6px dashed red;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 60%;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+/*parent container*/
+div.grid {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+/*container*/
+#square,circle {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    min-height: 100px;
+}
+
+#square img, #circle img{
+    width: 100%;
+}
+
+#seq {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+footer {
+    margin-top: 5%;
+}
+
+/*Destop Style*/
+
+@media only screen and (min-width: 900px)
+{
+    
+h1 {
+    font-size: 5em;
+}
+    
+#about2 {
+    font-size: 1em;
+    line-height: 1.4em;    
+}
+    
+/*parent container*/
+div.grid {
+    grid-template-columns: 1fr 1fr;
+    /*shortcut for even columns*/
+    grid-template-columns: repeat(2, 1fr);
+}
+    
+}

@@ -1,0 +1,103 @@
+body {
+   background-image: url(website_portrait.jpg);
+    background-repeat: no-repeat;
+}
+
+img.me {
+    margin-top: 5%;
+    display: flex;
+    width: 30%;
+    padding: 15px;
+    
+}
+
+#line {
+    width: 45%;
+    margin-left: 1%;
+    margin-right: 3%;
+    padding-bottom: 2%;
+    border-bottom: 6px dashed red; 
+}
+
+#text {
+    margin-left: 5%;
+    width: 80%;  
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 800;
+    color: yellow;
+    margin-top: 40%;
+    text-shadow: 5px 5px orangered;
+}
+
+h2, h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px blue;
+}
+
+h3 {
+    margin-top: 1%;
+}
+
+p, li  {
+    font-size: 1em;
+    line-height: 1.7em;
+    font-weight: 400;
+    margin-top: 1%;
+}
+
+address {
+    margin-top: 1%;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+address a{
+    text-shadow: 2px 2px blue;
+    color: white;
+    text-decoration: none;
+}
+
+address a:hover{
+    color: red;
+    text-decoration: line-through;
+}
+
+footer {
+    margin-top: 20%;
+}
+
+
+
+/*Destop Style*/
+
+@media only screen and (min-width: 900px)
+{
+  
+h1 {
+    font-size: 6em;
+    margin-top: 5%;
+} 
+
+h2, h3{
+    color: blue;
+    font-size: 1.8em;
+    text-shadow: 2px 2px white;
+}
+    
+p, li {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    width: 55%;
+}
+
+address { 
+    font-size: 2.5em;
+}
+    
+    
+}
